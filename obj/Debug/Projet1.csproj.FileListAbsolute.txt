@@ -1,0 +1,10 @@
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\bin\Debug\Projet1.exe.config
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\bin\Debug\Projet1.exe
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\bin\Debug\Projet1.pdb
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.csproj.AssemblyReference.cache
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.Properties.Resources.resources
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.VentesForm.resources
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.csproj.GenerateResource.cache
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.exe
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.pdb
