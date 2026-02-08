@@ -74,6 +74,7 @@
             this.Name = "VentesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventes";
+            this.Load += new System.EventHandler(this.VentesForm_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
