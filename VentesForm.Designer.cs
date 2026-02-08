@@ -29,53 +29,56 @@
         private void InitializeComponent()
         {
             this.listCommadClientSpecButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.menuPanel = new System.Windows.Forms.Panel();
             this.listVenteButton = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.menuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // listCommadClientSpecButton
             // 
             this.listCommadClientSpecButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listCommadClientSpecButton.Location = new System.Drawing.Point(20, 52);
+            this.listCommadClientSpecButton.Location = new System.Drawing.Point(135, 12);
             this.listCommadClientSpecButton.Name = "listCommadClientSpecButton";
             this.listCommadClientSpecButton.Size = new System.Drawing.Size(421, 38);
             this.listCommadClientSpecButton.TabIndex = 0;
             this.listCommadClientSpecButton.Text = "Liste des commandes d\'un client spécifique";
             this.listCommadClientSpecButton.UseVisualStyleBackColor = true;
+            this.listCommadClientSpecButton.Click += new System.EventHandler(this.listCommadClientSpecButton_Click);
             // 
-            // panel1
+            // menuPanel
             // 
-            this.panel1.Controls.Add(this.listVenteButton);
-            this.panel1.Controls.Add(this.listCommadClientSpecButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 193);
-            this.panel1.TabIndex = 1;
+            this.menuPanel.Controls.Add(this.listVenteButton);
+            this.menuPanel.Controls.Add(this.listCommadClientSpecButton);
+            this.menuPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuPanel.Location = new System.Drawing.Point(0, 0);
+            this.menuPanel.Name = "menuPanel";
+            this.menuPanel.Size = new System.Drawing.Size(602, 111);
+            this.menuPanel.TabIndex = 1;
             // 
             // listVenteButton
             // 
             this.listVenteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listVenteButton.Location = new System.Drawing.Point(20, 113);
+            this.listVenteButton.Location = new System.Drawing.Point(135, 56);
             this.listVenteButton.Name = "listVenteButton";
             this.listVenteButton.Size = new System.Drawing.Size(421, 38);
             this.listVenteButton.TabIndex = 1;
             this.listVenteButton.Text = "Liste des ventes par année";
             this.listVenteButton.UseVisualStyleBackColor = true;
+            this.listVenteButton.Click += new System.EventHandler(this.listVenteButton_Click);
             // 
             // VentesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 193);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(602, 111);
+            this.Controls.Add(this.menuPanel);
+            this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.Name = "VentesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventes";
             this.Load += new System.EventHandler(this.VentesForm_Load);
-            this.panel1.ResumeLayout(false);
+            this.menuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -83,7 +86,7 @@
         #endregion
 
         private System.Windows.Forms.Button listCommadClientSpecButton;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel menuPanel;
         private System.Windows.Forms.Button listVenteButton;
     }
 }

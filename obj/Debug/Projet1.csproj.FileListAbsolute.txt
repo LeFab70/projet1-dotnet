@@ -8,3 +8,6 @@ C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet
 C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.csproj.CoreCompileInputs.cache
 C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.exe
 C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.pdb
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.exe.config
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.ListCommandClientForm.resources
+C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.VenteParAnneeForm.resources

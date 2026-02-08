@@ -11,7 +11,15 @@ o Formulaire principal
 o Liste de commandes pour un client spécifique
 (Procédure stockée, mode simplex et mode complexe)
 o Un sommaire des ventes pour une période donnée retournant une seule valeur(Fonction agrégée)
-*/
+
+*************** Consignes Base de données :
+o Un seul DataSet pour la solution.
+o NorthWind locale est utilisée pour tous les formulaires
+o Mise à jour : Aucune dans toutes les situations.
+o Générer seulement le « Fill » dans toutes les situations
+ 
+ 
+ */
 
 using System;
 using System.Collections.Generic;
@@ -26,10 +34,15 @@ using System.Windows.Forms;
 namespace Projet1
 {
     public partial class VentesForm : Form
+
     {
+
+       // private Panel panelContainer; // Panel pour contenir les formulaires enfants
         public VentesForm()
         {
             InitializeComponent();
+
+           
         }
 
         private void VentesForm_Load(object sender, EventArgs e)
@@ -45,5 +58,42 @@ namespace Projet1
             }
 
         }
+
+        #region ouverture des formulaires enfants
+
+        //liste des commandes pour un client spécifique
+        private void listCommadClientSpecButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               ListCommandClientForm listCommandClientForm = new ListCommandClientForm();
+                listCommandClientForm.ShowDialog();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("An error occurred while loading the form liste commande: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        private void listVenteButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               VenteParAnneeForm venteParAnneeForm = new VenteParAnneeForm();
+                venteParAnneeForm.ShowDialog();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while loading the form liste vente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        #endregion
+
+
     }
 }
