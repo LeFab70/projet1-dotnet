@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListCommandClientForm));
             System.Windows.Forms.Label productNameLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListCommandClientForm));
             this.custOrdersOrdersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.custOrdersOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.northwindDataSet = new Projet1.NorthwindDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -46,17 +48,15 @@
             this.customerIDToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.getCustomerOrderDetailsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.custOrdersOrdersDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.getOrderDetailAdapterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.getOrderDetailAdapterDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.custOrdersOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.northwindDataSet = new Projet1.NorthwindDataSet();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custOrdersOrdersTableAdapter = new Projet1.NorthwindDataSetTableAdapters.CustOrdersOrdersTableAdapter();
             this.tableAdapterManager = new Projet1.NorthwindDataSetTableAdapters.TableAdapterManager();
             this.getOrderDetailAdapterTableAdapter = new Projet1.NorthwindDataSetTableAdapters.GetOrderDetailAdapterTableAdapter();
@@ -66,14 +66,23 @@
             productNameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersBindingNavigator)).BeginInit();
             this.custOrdersOrdersBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             this.getCustomerOrderDetailsToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getOrderDetailAdapterBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getOrderDetailAdapterDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // productNameLabel
+            // 
+            productNameLabel.AutoSize = true;
+            productNameLabel.Location = new System.Drawing.Point(12, 501);
+            productNameLabel.Name = "productNameLabel";
+            productNameLabel.Size = new System.Drawing.Size(82, 13);
+            productNameLabel.TabIndex = 4;
+            productNameLabel.Text = "Nom du produit:";
             // 
             // custOrdersOrdersBindingNavigator
             // 
@@ -101,6 +110,16 @@
             this.custOrdersOrdersBindingNavigator.Size = new System.Drawing.Size(599, 25);
             this.custOrdersOrdersBindingNavigator.TabIndex = 0;
             this.custOrdersOrdersBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // custOrdersOrdersBindingSource
+            // 
+            this.custOrdersOrdersBindingSource.DataMember = "CustOrdersOrders";
+            this.custOrdersOrdersBindingSource.DataSource = this.northwindDataSet;
+            // 
+            // northwindDataSet
+            // 
+            this.northwindDataSet.DataSetName = "NorthwindDataSet";
+            this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -136,6 +155,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -189,6 +209,7 @@
             // 
             // customerIDToolStripTextBox
             // 
+            this.customerIDToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.customerIDToolStripTextBox.Name = "customerIDToolStripTextBox";
             this.customerIDToolStripTextBox.Size = new System.Drawing.Size(100, 25);
             // 
@@ -205,6 +226,8 @@
             this.custOrdersOrdersDataGridView.AllowUserToAddRows = false;
             this.custOrdersOrdersDataGridView.AllowUserToDeleteRows = false;
             this.custOrdersOrdersDataGridView.AutoGenerateColumns = false;
+            this.custOrdersOrdersDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.custOrdersOrdersDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.custOrdersOrdersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.custOrdersOrdersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -218,6 +241,34 @@
             this.custOrdersOrdersDataGridView.Size = new System.Drawing.Size(573, 220);
             this.custOrdersOrdersDataGridView.TabIndex = 2;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "OrderID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Numéro commande";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "OrderDate";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Date commade";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "RequiredDate";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Date requise";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ShippedDate";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Date livraison";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
             // getOrderDetailAdapterBindingSource
             // 
             this.getOrderDetailAdapterBindingSource.DataMember = "fk_CustOrdersOrders_GetOrderDetailAdapter";
@@ -228,6 +279,8 @@
             this.getOrderDetailAdapterDataGridView.AllowUserToAddRows = false;
             this.getOrderDetailAdapterDataGridView.AllowUserToDeleteRows = false;
             this.getOrderDetailAdapterDataGridView.AutoGenerateColumns = false;
+            this.getOrderDetailAdapterDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.getOrderDetailAdapterDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.getOrderDetailAdapterDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.getOrderDetailAdapterDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
@@ -261,44 +314,6 @@
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
-            // custOrdersOrdersBindingSource
-            // 
-            this.custOrdersOrdersBindingSource.DataMember = "CustOrdersOrders";
-            this.custOrdersOrdersBindingSource.DataSource = this.northwindDataSet;
-            // 
-            // northwindDataSet
-            // 
-            this.northwindDataSet.DataSetName = "NorthwindDataSet";
-            this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "OrderID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Numéro commande";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "OrderDate";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Date commade";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "RequiredDate";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Date requise";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ShippedDate";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Date livraison";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
             // custOrdersOrdersTableAdapter
             // 
             this.custOrdersOrdersTableAdapter.ClearBeforeFill = true;
@@ -321,15 +336,6 @@
             // productsTableAdapter
             // 
             this.productsTableAdapter.ClearBeforeFill = true;
-            // 
-            // productNameLabel
-            // 
-            productNameLabel.AutoSize = true;
-            productNameLabel.Location = new System.Drawing.Point(12, 501);
-            productNameLabel.Name = "productNameLabel";
-            productNameLabel.Size = new System.Drawing.Size(82, 13);
-            productNameLabel.TabIndex = 4;
-            productNameLabel.Text = "Nom du produit:";
             // 
             // productNameLabel1
             // 
@@ -361,13 +367,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersBindingNavigator)).EndInit();
             this.custOrdersOrdersBindingNavigator.ResumeLayout(false);
             this.custOrdersOrdersBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
             this.getCustomerOrderDetailsToolStrip.ResumeLayout(false);
             this.getCustomerOrderDetailsToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getOrderDetailAdapterBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getOrderDetailAdapterDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
