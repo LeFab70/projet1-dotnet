@@ -37,9 +37,10 @@
             // listCommadClientSpecButton
             // 
             this.listCommadClientSpecButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listCommadClientSpecButton.Location = new System.Drawing.Point(135, 12);
+            this.listCommadClientSpecButton.Location = new System.Drawing.Point(162, 23);
+            this.listCommadClientSpecButton.Margin = new System.Windows.Forms.Padding(6);
             this.listCommadClientSpecButton.Name = "listCommadClientSpecButton";
-            this.listCommadClientSpecButton.Size = new System.Drawing.Size(421, 38);
+            this.listCommadClientSpecButton.Size = new System.Drawing.Size(842, 73);
             this.listCommadClientSpecButton.TabIndex = 0;
             this.listCommadClientSpecButton.Text = "Liste des commandes d\'un client spécifique";
             this.listCommadClientSpecButton.UseVisualStyleBackColor = true;
@@ -51,16 +52,18 @@
             this.menuPanel.Controls.Add(this.listCommadClientSpecButton);
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
+            this.menuPanel.Margin = new System.Windows.Forms.Padding(6);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(602, 111);
+            this.menuPanel.Size = new System.Drawing.Size(1150, 213);
             this.menuPanel.TabIndex = 1;
             // 
             // listVenteButton
             // 
             this.listVenteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listVenteButton.Location = new System.Drawing.Point(135, 56);
+            this.listVenteButton.Location = new System.Drawing.Point(162, 108);
+            this.listVenteButton.Margin = new System.Windows.Forms.Padding(6);
             this.listVenteButton.Name = "listVenteButton";
-            this.listVenteButton.Size = new System.Drawing.Size(421, 38);
+            this.listVenteButton.Size = new System.Drawing.Size(842, 73);
             this.listVenteButton.TabIndex = 1;
             this.listVenteButton.Text = "Liste des ventes par année";
             this.listVenteButton.UseVisualStyleBackColor = true;
@@ -68,11 +71,12 @@
             // 
             // VentesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 111);
+            this.ClientSize = new System.Drawing.Size(1150, 213);
             this.Controls.Add(this.menuPanel);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "VentesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

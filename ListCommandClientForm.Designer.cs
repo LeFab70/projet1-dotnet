@@ -62,7 +62,7 @@
             this.getOrderDetailAdapterTableAdapter = new Projet1.NorthwindDataSetTableAdapters.GetOrderDetailAdapterTableAdapter();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productsTableAdapter = new Projet1.NorthwindDataSetTableAdapters.ProductsTableAdapter();
-            this.productNameLabel1 = new System.Windows.Forms.Label();
+            this.productNameLabelLabel = new System.Windows.Forms.Label();
             productNameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.custOrdersOrdersBindingNavigator)).BeginInit();
             this.custOrdersOrdersBindingNavigator.SuspendLayout();
@@ -78,9 +78,10 @@
             // productNameLabel
             // 
             productNameLabel.AutoSize = true;
-            productNameLabel.Location = new System.Drawing.Point(12, 501);
+            productNameLabel.Location = new System.Drawing.Point(24, 963);
+            productNameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             productNameLabel.Name = "productNameLabel";
-            productNameLabel.Size = new System.Drawing.Size(82, 13);
+            productNameLabel.Size = new System.Drawing.Size(164, 25);
             productNameLabel.TabIndex = 4;
             productNameLabel.Text = "Nom du produit:";
             // 
@@ -90,6 +91,7 @@
             this.custOrdersOrdersBindingNavigator.BindingSource = this.custOrdersOrdersBindingSource;
             this.custOrdersOrdersBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.custOrdersOrdersBindingNavigator.DeleteItem = null;
+            this.custOrdersOrdersBindingNavigator.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.custOrdersOrdersBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -106,8 +108,9 @@
             this.custOrdersOrdersBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.custOrdersOrdersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.custOrdersOrdersBindingNavigator.Name = "custOrdersOrdersBindingNavigator";
+            this.custOrdersOrdersBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.custOrdersOrdersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.custOrdersOrdersBindingNavigator.Size = new System.Drawing.Size(599, 25);
+            this.custOrdersOrdersBindingNavigator.Size = new System.Drawing.Size(1198, 42);
             this.custOrdersOrdersBindingNavigator.TabIndex = 0;
             this.custOrdersOrdersBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -124,7 +127,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(70, 44);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -134,7 +137,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -143,13 +146,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 50);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -157,14 +160,14 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(96, 39);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 50);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -172,7 +175,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -181,45 +184,47 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 50);
             // 
             // getCustomerOrderDetailsToolStrip
             // 
+            this.getCustomerOrderDetailsToolStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.getCustomerOrderDetailsToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customerIDToolStripLabel,
             this.customerIDToolStripTextBox,
             this.getCustomerOrderDetailsToolStripButton});
-            this.getCustomerOrderDetailsToolStrip.Location = new System.Drawing.Point(0, 25);
+            this.getCustomerOrderDetailsToolStrip.Location = new System.Drawing.Point(0, 42);
             this.getCustomerOrderDetailsToolStrip.Name = "getCustomerOrderDetailsToolStrip";
-            this.getCustomerOrderDetailsToolStrip.Size = new System.Drawing.Size(599, 25);
+            this.getCustomerOrderDetailsToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.getCustomerOrderDetailsToolStrip.Size = new System.Drawing.Size(1198, 42);
             this.getCustomerOrderDetailsToolStrip.TabIndex = 1;
             this.getCustomerOrderDetailsToolStrip.Text = "getCustomerOrderDetailsToolStrip";
             // 
             // customerIDToolStripLabel
             // 
             this.customerIDToolStripLabel.Name = "customerIDToolStripLabel";
-            this.customerIDToolStripLabel.Size = new System.Drawing.Size(83, 22);
+            this.customerIDToolStripLabel.Size = new System.Drawing.Size(167, 44);
             this.customerIDToolStripLabel.Text = "Numéro client";
             // 
             // customerIDToolStripTextBox
             // 
             this.customerIDToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.customerIDToolStripTextBox.Name = "customerIDToolStripTextBox";
-            this.customerIDToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            this.customerIDToolStripTextBox.Size = new System.Drawing.Size(196, 50);
             // 
             // getCustomerOrderDetailsToolStripButton
             // 
             this.getCustomerOrderDetailsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.getCustomerOrderDetailsToolStripButton.Name = "getCustomerOrderDetailsToolStripButton";
-            this.getCustomerOrderDetailsToolStripButton.Size = new System.Drawing.Size(87, 22);
+            this.getCustomerOrderDetailsToolStripButton.Size = new System.Drawing.Size(174, 44);
             this.getCustomerOrderDetailsToolStripButton.Text = "Obtenir la liste";
-            this.getCustomerOrderDetailsToolStripButton.Click += new System.EventHandler(this.getCustomerOrderDetailsToolStripButton_Click_2);
+            this.getCustomerOrderDetailsToolStripButton.Click += new System.EventHandler(this.getCustomerOrderDetailsToolStripButton_Click);
             // 
             // custOrdersOrdersDataGridView
             // 
@@ -235,16 +240,19 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.custOrdersOrdersDataGridView.DataSource = this.custOrdersOrdersBindingSource;
-            this.custOrdersOrdersDataGridView.Location = new System.Drawing.Point(12, 53);
+            this.custOrdersOrdersDataGridView.Location = new System.Drawing.Point(15, 125);
+            this.custOrdersOrdersDataGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.custOrdersOrdersDataGridView.Name = "custOrdersOrdersDataGridView";
             this.custOrdersOrdersDataGridView.ReadOnly = true;
-            this.custOrdersOrdersDataGridView.Size = new System.Drawing.Size(573, 220);
+            this.custOrdersOrdersDataGridView.RowHeadersWidth = 82;
+            this.custOrdersOrdersDataGridView.Size = new System.Drawing.Size(1146, 423);
             this.custOrdersOrdersDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "OrderID";
             this.dataGridViewTextBoxColumn1.HeaderText = "Numéro commande";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
@@ -252,6 +260,7 @@
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "OrderDate";
             this.dataGridViewTextBoxColumn2.HeaderText = "Date commade";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
@@ -259,6 +268,7 @@
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "RequiredDate";
             this.dataGridViewTextBoxColumn3.HeaderText = "Date requise";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
@@ -266,6 +276,7 @@
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "ShippedDate";
             this.dataGridViewTextBoxColumn4.HeaderText = "Date livraison";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
@@ -287,16 +298,19 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.getOrderDetailAdapterDataGridView.DataSource = this.getOrderDetailAdapterBindingSource;
-            this.getOrderDetailAdapterDataGridView.Location = new System.Drawing.Point(12, 315);
+            this.getOrderDetailAdapterDataGridView.Location = new System.Drawing.Point(24, 606);
+            this.getOrderDetailAdapterDataGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.getOrderDetailAdapterDataGridView.Name = "getOrderDetailAdapterDataGridView";
             this.getOrderDetailAdapterDataGridView.ReadOnly = true;
-            this.getOrderDetailAdapterDataGridView.Size = new System.Drawing.Size(521, 168);
+            this.getOrderDetailAdapterDataGridView.RowHeadersWidth = 82;
+            this.getOrderDetailAdapterDataGridView.Size = new System.Drawing.Size(1042, 323);
             this.getOrderDetailAdapterDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Numéro produit";
             this.dataGridViewTextBoxColumn5.HeaderText = "Numéro produit";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
@@ -304,6 +318,7 @@
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Prix unité";
             this.dataGridViewTextBoxColumn6.HeaderText = "Prix unité";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
@@ -311,6 +326,7 @@
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "Quantité";
             this.dataGridViewTextBoxColumn7.HeaderText = "Quantité";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
@@ -337,28 +353,29 @@
             // 
             this.productsTableAdapter.ClearBeforeFill = true;
             // 
-            // productNameLabel1
+            // productNameLabelLabel
             // 
-            this.productNameLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.productNameLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.productNameLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductName", true));
-            this.productNameLabel1.Location = new System.Drawing.Point(95, 500);
-            this.productNameLabel1.Name = "productNameLabel1";
-            this.productNameLabel1.Size = new System.Drawing.Size(376, 23);
-            this.productNameLabel1.TabIndex = 5;
-            this.productNameLabel1.Text = "label1";
+            this.productNameLabelLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.productNameLabelLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.productNameLabelLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductName", true));
+            this.productNameLabelLabel.Location = new System.Drawing.Point(190, 962);
+            this.productNameLabelLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.productNameLabelLabel.Name = "productNameLabelLabel";
+            this.productNameLabelLabel.Size = new System.Drawing.Size(750, 42);
+            this.productNameLabelLabel.TabIndex = 5;
             // 
             // ListCommandClientForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 555);
+            this.ClientSize = new System.Drawing.Size(1198, 1065);
             this.Controls.Add(productNameLabel);
-            this.Controls.Add(this.productNameLabel1);
+            this.Controls.Add(this.productNameLabelLabel);
             this.Controls.Add(this.getOrderDetailAdapterDataGridView);
             this.Controls.Add(this.custOrdersOrdersDataGridView);
             this.Controls.Add(this.getCustomerOrderDetailsToolStrip);
             this.Controls.Add(this.custOrdersOrdersBindingNavigator);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "ListCommandClientForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -413,6 +430,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private NorthwindDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
-        private System.Windows.Forms.Label productNameLabel1;
+        private System.Windows.Forms.Label productNameLabelLabel;
     }
 }

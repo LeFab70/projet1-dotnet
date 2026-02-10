@@ -5,6 +5,7 @@ but :
 ******************************************************************
 *afficher les commandes d'un client spécifique
 */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,18 +20,17 @@ namespace Projet1
 {
     public partial class ListCommandClientForm : Form
     {
+        #region Constructeur
         public ListCommandClientForm()
         {
             InitializeComponent();
         }
 
+        #endregion
+
         #region form load et stylisation du datagridview
         private void ListCommandClientForm_Load(object sender, EventArgs e)
         {
-            
-          
-
-
             try
             {
 
@@ -78,8 +78,8 @@ namespace Projet1
                 custOrdersOrdersDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
                 custOrdersOrdersDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 
-                  getOrderDetailAdapterDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-                    getOrderDetailAdapterDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+                getOrderDetailAdapterDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+                getOrderDetailAdapterDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 
                 // Formatage des dates
                 System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
@@ -95,6 +95,7 @@ namespace Projet1
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
         }
+
         #endregion
 
         #region bouton de recherche client
@@ -123,24 +124,6 @@ namespace Projet1
                   *************************
                   */
 
-
-
-        private void getCustomerOrderDetailsToolStripButton_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                this.custOrdersOrdersTableAdapter.GetCustomerOrderDetails(this.northwindDataSet.CustOrdersOrders, customerIDToolStripTextBox.Text);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-
-
-        #endregion
-
         private void getCustomerOrderDetailsToolStripButton_Click(object sender, EventArgs e)
         {
             try
@@ -154,17 +137,7 @@ namespace Projet1
 
         }
 
-        private void getCustomerOrderDetailsToolStripButton_Click_2(object sender, EventArgs e)
-        {
-            try
-            {
-                this.custOrdersOrdersTableAdapter.GetCustomerOrderDetails(this.northwindDataSet.CustOrdersOrders, customerIDToolStripTextBox.Text);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+        #endregion
 
-        }
     }
 }

@@ -11,3 +11,16 @@ C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet
 C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.exe.config
 C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.ListCommandClientForm.resources
 C:\Mac\Home\Documents\prog1239 C# avancés\projetCsharp\Projet1\obj\Debug\Projet1.VenteParAnneeForm.resources
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.csproj.AssemblyReference.cache
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.exe.config
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.exe
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.pdb
+C:\Users\Boudr\Downloads\Projet1\Projet1\bin\Debug\Projet1.exe.config
+C:\Users\Boudr\Downloads\Projet1\Projet1\bin\Debug\Projet1.exe
+C:\Users\Boudr\Downloads\Projet1\Projet1\bin\Debug\Projet1.pdb
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.ListCommandClientForm.resources
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.Properties.Resources.resources
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.VenteParAnneeForm.resources
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.VentesForm.resources
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.csproj.GenerateResource.cache
+C:\Users\Boudr\Downloads\Projet1\Projet1\obj\Debug\Projet1.csproj.CoreCompileInputs.cache

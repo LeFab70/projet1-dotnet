@@ -26,8 +26,8 @@ namespace Projet1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.151.3.52,1433;Initial Catalog=Northwind;Persist Security Info=True" +
-            ";User ID=sa;Password=SqlPassW0rd2026!;Encrypt=True;TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DELL_A_KAYLEB\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Securit" +
+            "y=True;Encrypt=False;TrustServerCertificate=True")]
         public string NorthwindConnectionString {
             get {
                 return ((string)(this["NorthwindConnectionString"]));

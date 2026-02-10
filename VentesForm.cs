@@ -18,7 +18,6 @@ o NorthWind locale est utilisée pour tous les formulaires
 o Mise à jour : Aucune dans toutes les situations.
 o Générer seulement le « Fill » dans toutes les situations
  
- 
  */
 
 using System;
@@ -34,56 +33,52 @@ using System.Windows.Forms;
 namespace Projet1
 {
     public partial class VentesForm : Form
-
     {
-
-       // private Panel panelContainer; // Panel pour contenir les formulaires enfants
+        #region Constructeur
         public VentesForm()
         {
             InitializeComponent();
-
-           
         }
 
+        #endregion
+
+        #region Load
         private void VentesForm_Load(object sender, EventArgs e)
         {
             try
             {
-
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred while loading the sales data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
-        #region ouverture des formulaires enfants
+        #endregion
 
+        #region ouverture des formulaires enfants
         //liste des commandes pour un client spécifique
         private void listCommadClientSpecButton_Click(object sender, EventArgs e)
         {
             try
             {
-               ListCommandClientForm listCommandClientForm = new ListCommandClientForm();
+                ListCommandClientForm listCommandClientForm = new ListCommandClientForm();
+                listCommandClientForm.MinimumSize = new Size(600, 650);
                 listCommandClientForm.ShowDialog();
-
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show("An error occurred while loading the form liste commande: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+
         private void listVenteButton_Click(object sender, EventArgs e)
         {
             try
             {
                VenteParAnneeForm venteParAnneeForm = new VenteParAnneeForm();
-                venteParAnneeForm.ShowDialog();
-
+               venteParAnneeForm.ShowDialog();
             }
             catch (Exception ex)
             {
@@ -93,7 +88,6 @@ namespace Projet1
         }
 
         #endregion
-
 
     }
 }
