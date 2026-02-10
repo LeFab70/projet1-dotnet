@@ -54,6 +54,9 @@
     <Compile Include="ListCommandClientForm.Designer.cs">
       <DependentUpon>ListCommandClientForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NorthwindDataSet.cs">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="NorthwindDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

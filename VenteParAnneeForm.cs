@@ -35,5 +35,24 @@ namespace Projet1
         }
 
         #endregion
+
+        #region Clique du bouton de recherche
+        private void obtenirVentesTotalToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.dataTableVentesTableAdapter.ObtenirVentesTotal(this.northwindDataSet.DataTableVentes, paysToolStripTextBox.Text, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(dDDToolStripTextBox.Text, typeof(System.DateTime))))), new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(dDFToolStripTextBox.Text, typeof(System.DateTime))))));
+                decimal.TryParse(valeurTextBox.Text, out decimal valeur);
+                valeurTextBox.Text = valeur.ToString("C2");
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        #endregion
+
     }
 }
