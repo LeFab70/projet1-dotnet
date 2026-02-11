@@ -39,11 +39,19 @@ namespace Projet1
         #region Clique du bouton de recherche
         private void obtenirVentesTotalToolStripButton_Click(object sender, EventArgs e)
         {
+            /*
+            SELECT SUM(([Order Details].UnitPrice * [Order Details].Quantity) * (1 - [Order Details].Discount)) AS Valeur
+            FROM  Employees INNER JOIN
+                     Orders ON Employees.EmployeeID = Orders.EmployeeID INNER JOIN
+                     [Order Details] ON Orders.OrderID = [Order Details].OrderID
+            WHERE (Employees.Country = @Pays) AND (Orders.RequiredDate BETWEEN @DDD AND @DDF)
+            GROUP BY Employees.Country
+            */
             try
             {
                 this.dataTableVentesTableAdapter.ObtenirVentesTotal(this.northwindDataSet.DataTableVentes, paysToolStripTextBox.Text, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(dDDToolStripTextBox.Text, typeof(System.DateTime))))), new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(dDFToolStripTextBox.Text, typeof(System.DateTime))))));
-                decimal.TryParse(valeurTextBox.Text, out decimal valeur);
-                valeurTextBox.Text = valeur.ToString("C2");
+                decimal.TryParse(valeurLabelLabel.Text, out decimal valeur);
+                valeurLabelLabel.Text = valeur.ToString("C2");
             }
             catch (System.Exception ex)
             {
